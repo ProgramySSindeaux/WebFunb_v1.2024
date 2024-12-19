@@ -1,0 +1,138 @@
+  
+
+  /*************************************************************/
+  /*FUNDO DE PAREDE*/
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+body {
+    background-color:#ddd; /* Cor de fundo */
+    background-image: url('../Imagens_ALMO/fundo.web.jpg');
+    background-size:cover; /* Ajusta a imagem para cobrir toda a página */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-attachment:fixed;
+    background-position: center;
+    
+}
+
+/*************************************************************/
+/*CABEÇALHO HEADER*/
+.header {
+    background-color: #08e94083; /* Transparência */
+    backdrop-filter: blur(10px); /* Efeito embaçado */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    width: 70%; /* Largura diminuída */
+    margin: 0 auto; /* Centraliza o cabeçalho */
+    border-top-left-radius: 10px;border-top-right-radius: 10px;/*Bordas top*/
+    
+}
+.header_1 {
+  background-color: rgba(49, 48, 48, 0.5); /* Transparência */
+  backdrop-filter: blur(40px); /* Efeito embaçado */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  width: 70%; /* Largura diminuída */
+  margin: 0 auto; /* Centraliza o cabeçalho */
+
+}
+
+.content {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+.footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: max-content/*100%*/;
+    bottom: 0;
+}
+.corFonte {
+  color: #ff0000;
+
+}
+
+/*************************************************************/
+/*MENU*/
+/* The navbar container */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Navbar links */
+  .topnav a {
+    background-color: rgba(11, 168, 196, 0.5); /* Transparência */
+    float: left;
+    display: flex;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    justify-content: center;
+  }
+  .topnav2 b {
+    background-color: rgba(25, 173, 199, 0.5); /* Transparência */
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Links - change color on hover */
+  .topnav a:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+  
+
+
+/*************************************************************/
+
+/*BOTÕES*/
+/* Create three equal columns that float next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+
+.image-button{
+    border: none;
+    padding: 10;
+    background:none;
+    cursor: pointer;
+    background-position: center;
+    color: #F1F1F1;
+}
+
+.image-button img{
+    display: block;
+    width: 100px;/* Ajuste o tamanho conforme necessário */
+    height: auto;
+    right: 00;
+    transform: filter 0.20s ease;
+}
+
+.image-button:hover img{
+    filter:blur(5px)/* Ajuste o valor do blur conforme necessário */
+}
